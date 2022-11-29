@@ -160,7 +160,7 @@ class ArcMarginProduct(nn.Module):
             # if cos(θ) > cos(pi - m) means θ + m < math.pi, so phi = cos(θ + m);
             # else means θ + m >= math.pi, we use Talyer extension to approximate the cos(θ + m).
             # if fact, cos(θ + m) = cos(θ) - m * sin(θ) >= cos(θ) - m * sin(math.pi - m)
-            phi = torch.where(cosine > self.threshold, phi, cosine - self.mm) # https://github.com/ronghuaiyang/arcface-pytorch/issues/48
+            phi = torch.where(cosine > self.threshold, phi, cosine - self.mm) 
         # --------------------------- convert label to one-hot ---------------------
         # one_hot = torch.zeros(cosine.size(), requires_grad=True, device='cuda')
         # 对label形式进行onehot转换，假设batch为2、有3类的话，即将label从[1,2]转换成[[0,1,0],[0,0,1]]
