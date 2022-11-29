@@ -178,14 +178,14 @@ class ArcMarginProduct(nn.Module):
 
 ```
 # Summary
-* Use Yolov5 to split fullbody data and backfins data;
-* Use tf_efficientnet_b0_ns + ArcFace as Baseline, train fullbody 512size, use kNN to search;
-* Add new_individual post-processing;
-* Training backfins 512size;
-* Use the fullbody 768size image, and adjust the data enhancement;
-* Fusion of fullbody 768size model and backfins 768size model;
-* Training tf_efficientnet_b6_ns , and fine-tuning all the above features;
-* Training tf_efficientnetv2_l_in21k, and fine-tuning all the above functions;
-* Training eca_nfnet_l2, and fine-tuning all the above functions;
-* Combine the 5Fold of the above three models, select the one with high cv, and fuse it;
-* KNN search parameters;
+1. Use Yolov5 to split fullbody data and backfins data;
+2. Use tf_efficientnet_b0_ns + ArcFace as Baseline, train fullbody 512size, use kNN to search;
+3. Add new_individual post-processing;
+4. Training backfins 512size;
+5. Use the fullbody 768size image, and adjust the data enhancement;
+6. Fusion of fullbody 768size model and backfins 768size model;
+7. Training tf_efficientnet_b6_ns , and fine-tuning all the above features;
+8. Training tf_efficientnetv2_l_in21k, and fine-tuning all the above functions;
+9. Training eca_nfnet_l2, and fine-tuning all the above functions;
+10. Combine the 5Fold of the above three models, select the one with high cv, and fuse it;
+11. KNN search parameters;
