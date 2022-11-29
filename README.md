@@ -179,13 +179,13 @@ class ArcMarginProduct(nn.Module):
 ```
 # Summary
 * Use Yolov5 to split fullbody data and backfins data;
-* Use tf_efficientnet_b0_ns + ArcFace as Baseline, train fullbody 512size, use kNN to search, Public LB: 0.729;
-* Add new_individual post-processing, Public LB: 742;
-* Training backfins 512size, Public LB: 0.702;
-* Use the fullbody 768size image, and adjust the data enhancement, Public LB: 0.770;
-* Fusion of fullbody 768size model and backfins 768size model, Public LB: 0.791;
-* Training tf_efficientnet_b6_ns , and fine-tuning all the above features, Public LB: 0.834;
-* Training tf_efficientnetv2_l_in21k, and fine-tuning all the above functions, Public LB: 0.856;
-* Training eca_nfnet_l2, and fine-tuning all the above functions, Public LB: 0.854;
-* Combine the 5Fold of the above three models, select the one with high cv, and fuse it, Public LB: 0.872;
-* KNN search parameters, Public LB: 0.885+;
+* Use tf_efficientnet_b0_ns + ArcFace as Baseline, train fullbody 512size, use kNN to search;
+* Add new_individual post-processing;
+* Training backfins 512size;
+* Use the fullbody 768size image, and adjust the data enhancement;
+* Fusion of fullbody 768size model and backfins 768size model;
+* Training tf_efficientnet_b6_ns , and fine-tuning all the above features;
+* Training tf_efficientnetv2_l_in21k, and fine-tuning all the above functions;
+* Training eca_nfnet_l2, and fine-tuning all the above functions;
+* Combine the 5Fold of the above three models, select the one with high cv, and fuse it;
+* KNN search parameters;
