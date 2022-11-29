@@ -25,9 +25,9 @@ Our solution for this project uses the **multi-model fusion of EfficientNet_B6 /
 
 For the model, we chose allenai/longformer-base-4096 and microsoft/deberta-large versions, and then connected a Dropout layer and a Linear layer.
 
-# Coding Part
+# Coding Parts
 
-## modeling
+## Modeling
 ```
 class HappyWhaleModel(nn.Module):
     def __init__(self, model_name, embedding_size, pretrained=True):
@@ -79,7 +79,7 @@ class HappyWhaleModel(nn.Module):
 
 
 
-## data augmentation
+## Data Augmentation
 ```
 # 数据增强
 data_transforms = {
@@ -188,4 +188,4 @@ class ArcMarginProduct(nn.Module):
 * Training tf_efficientnetv2_l_in21k, and fine-tuning all the above functions, Public LB: 0.856;
 * Training eca_nfnet_l2, and fine-tuning all the above functions, Public LB: 0.854;
 * Combine the 5Fold of the above three models, select the one with high cv, and fuse it, Public LB: 0.872;
-* kNN search parameters, Public LB: 0.885+;
+* KNN search parameters, Public LB: 0.885+;
