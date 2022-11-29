@@ -1,5 +1,5 @@
 # Whale-and-Dolphin-Identification
-                                        ![image](https://user-images.githubusercontent.com/69694512/204549502-a8476fb3-a2d4-4281-a128-7eba53786ed2.png)
+![image](https://user-images.githubusercontent.com/69694512/204550639-4990a25c-cb34-4e2f-a802-f0eb95445f2c.png)
 
 In this Projecr, we will build an automated model for image recognition of whales and dolphins in order to reduce recognition time.
 
